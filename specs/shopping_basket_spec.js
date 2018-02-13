@@ -11,7 +11,7 @@ describe('shopping basket', function () {
 
   it('should have items', function () {
     assert.deepStrictEqual(shoppingBasket.items, []);
-  })
+  });
 
   it('should start empty', function () {
     const actual = shoppingBasket.getItemCount();
