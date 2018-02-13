@@ -14,4 +14,12 @@ ShoppingBasket.prototype.removeItem = function (item) {
   this.items.splice(index, 1);
 }
 
+ShoppingBasket.prototype.basketTotalPrice = function () {
+  let basketPrice = 0;
+  for (item of this.items){
+    basketPrice += item.price;
+  }
+  return basketPrice;
+}
+
 module.exports = ShoppingBasket;
