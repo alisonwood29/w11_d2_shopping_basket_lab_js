@@ -21,7 +21,7 @@ describe('shopping basket', function () {
   });
 
   it('should be able to add an item', function () {
-    shoppingBasket.add(item);
+    shoppingBasket.addItem(item);
     const actual = shoppingBasket.getItemCount();
     assert.strictEqual(actual, 1);
   });
