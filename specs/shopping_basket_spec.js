@@ -35,6 +35,12 @@ describe('shopping basket', function () {
     const actual = shoppingBasket.items;
     assert.deepStrictEqual(actual, [item2]);
   })
+  it('should be able to calculate total basket price', function(){
+    shoppingBasket.addItem(item1);
+    shoppingBasket.addItem(item2);
+    assert.strictEqual(shoppingBasket.basketTotalPrice(), 14.00);
+
+  })
 
 
 
