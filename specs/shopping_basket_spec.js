@@ -33,7 +33,7 @@ describe('shopping basket', function () {
     shoppingBasket.addItem(item2);
     shoppingBasket.removeItem(item1);
     const actual = shoppingBasket.items;
-    assert.deepStrictEqual(actual, [item2])
+    assert.deepStrictEqual(actual, [item2]);
   })
 
 
