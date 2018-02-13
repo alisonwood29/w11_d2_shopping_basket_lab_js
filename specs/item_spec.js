@@ -17,4 +17,8 @@ describe('Item', function () {
     assert.strictEqual(item.price, 2.00);
   })
 
+  it('should have a bogof true or false set', function(){
+    assert.strictEqual(item.bogof, false);
+  })
+
 })
