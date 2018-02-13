@@ -13,4 +13,8 @@ describe('Item', function () {
     assert.strictEqual(item.name, 'beer');
   })
 
+  it('should have a price', function(){
+    assert.strictEqual(item.price, 2.00);
+  })
+
 })
