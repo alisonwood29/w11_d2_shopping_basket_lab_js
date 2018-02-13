@@ -1,9 +1,11 @@
 const assert = require('assert');
 const ShoppingBasket = require('../shopping_basket');
+const Item = require('../item');
 
 describe('shopping basket', function () {
 
   let shoppingBasket;
+  let item;
 
   beforeEach(function () {
     shoppingBasket = new ShoppingBasket();
@@ -16,6 +18,12 @@ describe('shopping basket', function () {
   it('should start empty', function () {
     const actual = shoppingBasket.getItemCount();
     assert.strictEqual(actual, 0);
+  });
+
+  it('should be able to add an item', function () {
+    shoppingBasket.add(item);
+    const actual = shoppingBasket.getItemCount();
+    assert.strictEqual(actual, 1);
   });
 
 
